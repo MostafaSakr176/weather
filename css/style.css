@@ -1,0 +1,159 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #1e202b;
+  color: white;
+}
+.navbar{
+  background: #1e202b;
+  color: white;
+}
+.navbar-brand img{
+  width: 70px;
+  height: 40px;
+}
+.logo-content h6{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: white;
+}
+.logo-content p{
+  font-size: 12px;
+  margin-bottom: 0;
+  color: white;
+}
+.nav-item{
+  height: 33px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 20px;
+  border: 2px solid transparent;
+}
+.nav-link{
+  color: white;
+}
+.nav-item:hover{
+  color: dodgerblue;
+  border: 2px solid dodgerblue;
+  border-radius: 20px;
+  padding: 2px 20px;
+}
+.nav-item:hover .nav-link{
+  color: rgb(51, 153, 255);
+}
+
+.active{
+  
+  border: 2px solid dodgerblue;
+  border-radius: 20px;
+}
+.active .nav-link{
+  color: rgb(51, 153, 255);
+}
+.navbar-toggler-icon i{
+  font-size: 30px;
+  color: white;
+}
+
+
+.weather{
+  padding: 80px 0 150px;
+  background-image: url('../images/banner.png');
+  background-position: center center;
+  background-size: cover;
+}
+.find-location{
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.location-inpt{
+  width: 100%;
+  padding: 15px 0 15px 25px;
+  background-color: #1e202b;
+  color: wheat;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+.find-btn{
+  position: absolute;
+    top: 6px;
+    right: 5px;
+    border: navajowhite;
+    font-size: 18px;
+    color: wheat;
+    background-color: dodgerblue;
+    padding: 8px 26px;
+    border-radius: 30px;
+}
+
+.forcast-container{
+  margin-top: -130px;
+  background: #323544;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.forcast-date{
+  color: white;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.forcast-body{
+  height: 100%;
+  padding: 40px 20px;
+}
+.forcast-body p{
+  font-size: 20px;
+}
+.degree{
+  font-size: 80px;
+  font-weight: 500;
+}
+.next-degree{
+  font-size: 30px;
+  font-weight: 500;
+}
+.next-forcast-date{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.next-forcast-body{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+}
+.subscripe-inpt{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.social-link{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(51, 153, 255);
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: all 0.2s;
+}
+.social-link a{
+  transition: all 0.2s;
+}
+.social-link:hover a{
+  color: #fff;
+}
+.social-link:hover{
+  background-color: rgb(51, 153, 255);
+}

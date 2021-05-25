@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<body>
+
+    
+  <nav class="navbar navbar-expand-lg">
+    <div class="container py-4">
+      <div class="logo">
+        <a class="navbar-brand w-100 d-flex" href="#">
+          <img src="images/logo@2x.png" alt="">
+          <div class="logo-content ml-2 d-flex flex-column justify-content-center text-center">
+            <h6>Weather</h6>
+            <p>tagline goes here</p>
+          </div>
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="weather">
+    <div class="container">
+      <form class="find-location" action="">
+        <input class="location-inpt" id="locationInput" onkeyup="search(this.value)" type="text" placeholder="find yor location ...">
+        <button class="find-btn" type="submit">Find</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="forcast-container">
+      <div class="row m-0 justify-content-center">
+        <div class="forcast col-md-4 col-sm-12 px-0">
+          <div class="forcast-date d-flex justify-content-between">
+            <p id="currentDay" class="m-0">Monday</p>
+            <p id="currentDate" class="m-0">24May</p>
+          </div>
+          <div class="forcast-body">
+            <p class="mb-2" id="city">cairo</p>
+            <div class="">
+              <div id="degree" class="degree">
+                29<sup>o</sup>C
+              </div>
+              <div id="forcastIcon" class="forcast-icon">
+                <img src="images/night.png" alt="">
+              </div>
+            </div>
+            <p id="weatherStatus" class="text-info">clear</p>
+            <div class="d-flex">
+              <span class="mr-3 d-flex"><img class="mr-1" src="images/icon-umberella.png" alt=""><div id="cloudPercentage">20%</div></span>
+              <span class="mr-3 d-flex"><img class="mr-1" src="images/icon-wind.png" alt=""><div id="windSpeed">18km/h</div></span>
+              <span class="d-flex"><img class="mr-1" src="images/icon-compass.png" alt=""><div id="direction">East</div></span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="forcast col-md-4 col-sm-12 px-0">
+          <div class="forcast-date next-forcast-date">
+            <p id="nextDay" class="m-0 text-light text-center">Tuesday</p>
+          </div>
+          <div class="forcast-body next-forcast-body d-flex flex-column justify-content-start align-items-center">
+            <div id="nextForcastIcon" class="forcast-icon">
+              <img src="images/day.png" alt="">
+            </div>
+            <div id="nextDayDegree" class="next-degree mb-2">
+                35.9<sup>o</sup>C
+            </div>
+            <div id="nextNightDegree" class="mb-3">21<sup>o</sup></div>
+            <p id="nextWeatherStatus" class="text-info">sunny</p>
+          </div>
+        </div>
+  
+        <div class="forcast col-md-4 col-sm-12 px-0">
+          <div class="forcast-date">
+            <p id="lastDay" class="m-0 text-light text-center">Wednesday</p>
+          </div>
+          <div class="forcast-body d-flex flex-column justify-content-start align-items-center">
+            <div id="lastForcastIcon" class="forcast-icon">
+                <img src="images/day.png" alt="">
+            </div>
+            <div id="lastDayDegree" class="next-degree mb-2">
+                40.3<sup>o</sup>C
+            </div>
+            <div id="lastNightDegree" class="mb-3">22.7<sup>o</sup></div>
+            <p id="lastWeatherStatus" class="text-info">sunny</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="row justify-content-md-between justify-content-sm-center mb-5">
+          <div class="col-md-8 col-sm-12">
+            <form class="find-location mb-3" action="">
+              <input class="location-inpt subscripe-inpt" type="text" placeholder="enter your email to subscripe ...">
+              <button class="find-btn" type="submit">subscripe</button>
+            </form>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="social-links d-flex justify-content-md-end justify-content-center">
+              <div class="social-link">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </div>
+              <div class="social-link">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+              <div class="social-link">
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+              </div>
+              <div class="social-link">
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
